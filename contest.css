@@ -1,0 +1,196 @@
+/* style.css */
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #000; /* Black background */
+    color: #FF0; /* Yellow text color for the entire body */
+}
+
+.container {
+    background-color: #111; /* Slightly lighter black for container background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(255, 255, 0, 0.1); /* Yellowish shadow */
+    text-align: center;
+}
+
+#text-display {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #333; /* Darker border */
+    min-height: 80px; /* Increased height for longer texts */
+    background-color: #222; /* Slightly darker background for better contrast */
+}
+
+#user-input {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    resize: vertical;
+    min-height: 80px;
+    background-color: #222;
+    color: #FF0;
+    border: 1px solid #333;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Green button */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+button:hover {
+    background-color: #45a049;
+}
+#timer {
+    margin-top: 10px;
+    font-weight: bold;
+}
+#duration-selection{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+#difficulty-selection {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+#results h2{
+    margin-bottom: 0;
+}
+/* style.css */
+/* ... (previous styles) */
+.selection-group { /* Style the group of selection buttons */
+    display: flex;
+    flex-direction: column; /* Stack duration and difficulty vertically */
+    gap: 10px; /* Add spacing between the groups */
+    margin-bottom: 20px; /* Add space below the selection groups */
+}
+.selection-group div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.selection-group label { /* Style the labels */
+    font-weight: bold;
+    margin-right: 5px;
+    min-width: 80px; /* Ensure labels have consistent width */
+    text-align: left;
+}
+
+/* Style the buttons to look different */
+.selection-group button {
+    background-color: #333; /* Darker background */
+    color: #FF0; /* Yellow text */
+    border: 1px solid #555; /* Darker border */
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.selection-group button:hover {
+    background-color: #555; /* Slightly lighter background on hover */
+}
+#start-button { /* Style the start button */
+    padding: 12px 24px;
+    background-color: #007bff; /* Blue color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em; /* Slightly larger font */
+    margin-top: 20px; /* Add some space above */
+    transition: background-color 0.3s ease;
+}
+
+#start-button:hover {
+    background-color: #0056b3;
+}
+.selected {
+    background-color: #007bff !important; /* Highlight selected buttons */
+    color: white !important;
+}
+
+.Home-button {
+    text-decoration: none;
+    color: white;
+
+}
+
+#text-container {
+    border: 1px solid #333;
+    padding: 10px;
+    background-color: #222;
+    min-height: 80px;
+    color: #FF0;
+    position: relative;
+}
+
+#text-display {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    pointer-events: none;
+    white-space: pre-wrap;
+    word-break: break-word;
+    overflow: hidden; /* Prevent text from overflowing */
+}
+
+#user-input {
+    width: calc(100% - 22px);
+    height: calc(100% - 22px);
+    padding: 10px;
+    margin: 0;
+    border: none;
+    background: transparent;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    resize: none; /* Prevent resizing */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2; /* Ensure input is on top */
+    caret-color: #FF0;
+    overflow: hidden;
+}
+
+
+#text-container {
+    border: 1px solid #333;
+    padding: 10px;
+    background-color: #222;
+    min-height: 80px;
+    color: #FF0;
+    white-space: pre-wrap;
+    word-break: break-word;
+    overflow-y: auto; /* Add scrollbar if content overflows vertically */
+}
+
+#typing-area {
+    outline: none;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+.correct {
+    color: green;
+}
+
+.incorrect {
+    color: red;
+    text-decoration: underline;
+}
